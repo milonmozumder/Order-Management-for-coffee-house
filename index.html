@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Ordering System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Our Restaurant!</h1>
+    <h2>Menu</h2>
+
+      <ul id="menu-list">
+  <li>Pizza: tk40</li>
+  <li>Pasta: tk50</li>
+  <li>Burger: tk80</li>
+  <li>Coffee: tk55</li>
+</ul>
+
+
+    <div class="order-section">
+      <label for="item-name">Enter the name of the item you want to order:</label>
+      <input type="text" id="item-name" placeholder="e.g., Pizza">
+      <button id="add-item">Add Item</button>
+    </div>
+
+    <div class="bill-section">
+      <h3>Your Bill Receipt</h3>
+      <table id="bill-table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Price (tk)</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <p><strong>Total Amount:</strong> <span id="total-amount">tk0</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
